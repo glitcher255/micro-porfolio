@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
 /* John Doe */
 
 top_nav {
@@ -23,6 +28,7 @@ position: absolute;
 width: 255px;
 height: 40px;
 right: 190px;
+top: calc(50% - 40px/2);
 z-index: 99;
 }
 
@@ -54,7 +60,7 @@ portfolio {
 width: 63px;
 height: 20px;
 
-font-family: sans-serif;
+font-family: 'Inter', sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 15px;
@@ -118,7 +124,7 @@ johndoe {
 width: 92px;
 height: 20px;
 
-font-family: Sans-serif;
+font-family: 'Inter', sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 20px;
@@ -146,7 +152,7 @@ about {
 width: 45px;
 height: 20px;
 
-font-family: sans-serif;
+font-family: 'Inter', sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 15px;
@@ -174,7 +180,7 @@ contact {
     width: 59px;
     height: 20px;
     
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -230,7 +236,7 @@ order: 0;
 flex-grow: 0;
 }
 
-union {
+union1 {
     /* Union */
 
 
@@ -242,10 +248,10 @@ top: 3px;
 
 /* Neutrals/N0 */
 
-background: #FFFFFF;
+background: #3E3C3C;
 }
 
-vector {
+vectorx {
     /* Vector */
 
 
@@ -281,3 +287,259 @@ For regular body text.
 border: 2px solid #67798E;
 border-radius: 4px;
 }
+
+medium {
+    /* medium */
+
+
+position: absolute;
+left: 2.5%;
+right: 96.11%;
+top: 11.25%;
+bottom: 88.4%;
+
+background: #CFCFCF;
+}
+
+github {
+    /* github */
+
+
+position: absolute;
+left: 2.5%;
+right: 96.25%;
+top: -100%;
+bottom: 92.87%;
+
+background: #CFCFCF;
+}
+
+angel_list {
+    /* angel list */
+
+
+position: absolute;
+left: 2.5%;
+right: 96.11%;
+top: -45%;
+bottom: 89.19%;
+
+background: #CFCFCF;
+}
+
+social_icons {
+    /* social media icons */
+
+
+position: absolute;
+width: 20px;
+height: 98.96px;
+left: 36px;
+top: 394px;
+
+}
+
+twitter {
+    /* twitter */
+
+
+position: absolute;
+left: 2.5%;
+right: 96.11%;
+top: -15%;
+bottom: 89.19%;
+
+background: #CFCFCF;
+}
+
+linkedin {
+    /* Linkedin icon */
+
+
+    position: absolute;
+    left: 3.01%;
+    right: 96.11%;
+    top: -75%;
+    bottom: 90.92%;
+    
+    background: #CFCFCF;
+}
+
+#vector1 {
+/* Vector */
+
+
+position: absolute;
+left: 2.5%;
+right: 97.15%;
+top: 8.78%;
+bottom: 90.92%;
+
+background: #CFCFCF;
+}
+
+#vector2 {
+    /* Vector */
+
+
+position: absolute;
+left: 2.5%;
+right: 97.15%;
+top: 8.64%;
+bottom: 91.25%;
+
+background: #CFCFCF;
+}
+
+#vector3 {
+    /* Vector */
+
+
+position: absolute;
+left: 3.01%;
+right: 96.11%;
+top: 8.7%;
+bottom: 90.92%;
+
+background: #CFCFCF;
+}
+
+headline {
+    /* Headline */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 192px 0px;
+gap: 24px;
+
+position: absolute;
+width: 566px;
+height: 739px;
+left: 143px;
+top: 72px;
+
+}
+
+primary_text {
+    /* Primary Text */
+
+
+width: 566px;
+height: 160px;
+
+font-family: 'Crete Round';
+font-style: normal;
+font-weight: 400;
+font-size: 72px;
+line-height: 82px;
+/* or 113% */
+
+
+color: #F55800;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+supporting_text {
+    /* Supporting Text */
+
+
+width: 566px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 44px;
+/* or 138% */
+
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+description {
+    /* Description */
+
+
+width: 566px;
+height: 123px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+/* or 160% */
+
+
+/* Neutrals/N20 */
+
+color: #F4F5F7;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+}
+
+base1 {
+    /* Base */
+
+
+position: absolute;
+width: 1440px;
+height: 870px;
+left: 0px;
+top: 0px;
+z-index: -1;
+
+background: #1C1A19;
+}
+
+illustration {
+    /* Illustration-header */
+
+
+position: absolute;
+width: 1003.13px;
+height: 769.27px;
+left: 1744.68px;
+top: -135px;
+
+transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+}
+
+illustration_header {
+    /* Illustration-header */
+
+
+position: absolute;
+left: 96.37%;
+right: -96.23%;
+top: 0%;
+bottom: 0.1%;
+
+transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+}
+
