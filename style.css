@@ -273,7 +273,7 @@ li {
   height: 875px;
 }
 
-appbar {
+#appbar {
   display: none;
 }
 
@@ -375,9 +375,7 @@ appbar {
     position: absolute;
     width: 100%;
     height: 92px;
-    left: 0px;
-    top: 0px;
-    background: #3C3A39;
+    background: #3c3a39;
   }
 
   #item_nav {
