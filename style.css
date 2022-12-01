@@ -86,7 +86,7 @@ johndoe {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -103,7 +103,7 @@ about {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -120,7 +120,7 @@ contact {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -227,7 +227,7 @@ primary_text {
   font-weight: 400;
   font-size: 72px;
   line-height: 82px;
-  color: #F55800;
+  color: #f55800;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -243,7 +243,7 @@ supporting_text {
   line-height: 44px;
   display: flex;
   align-items: center;
-  color: #FFF;
+  color: #fff;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -268,7 +268,7 @@ base1 {
   width: 1440px;
   height: 870px;
   z-index: -1;
-  background: #1C1A19;
+  background: #1c1a19;
 }
 
 illustration {
@@ -304,7 +304,7 @@ body {
     width: 375px;
     height: 590px;
     top: 92px;
-    background: #1C1A19;
+    background: #1c1a19;
   }
 
   primary_text {
@@ -316,7 +316,7 @@ body {
     font-size: 56px;
     line-height: 64px;
     letter-spacing: 0.37px;
-    color: #FF6B00;
+    color: #ff6b00;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -332,7 +332,7 @@ body {
     line-height: 32px;
     display: flex;
     align-items: center;
-    color: #FFF5E1;
+    color: #fff5e1;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -346,7 +346,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: #fff;
     flex: none;
     order: 2;
     flex-grow: 0;
@@ -386,8 +386,7 @@ body {
     width: 40px;
     height: 40px;
     right: -80px;
-    top: calc(50% - 40px/2);
-
+    top: calc(50% - 40px / 2);
     border-radius: 8px;
   }
 
