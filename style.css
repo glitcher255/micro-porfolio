@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-to1_nav1 {
+#to1_nav1 {
   position: absolute;
   width: 100%;
   height: 72px;
@@ -10,7 +10,7 @@ to1_nav1 {
   top: 1px;
 }
 
-item_nav {
+#item_nav {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -24,7 +24,7 @@ item_nav {
   z-index: 99;
 }
 
-fram4 {
+#fram4 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -37,7 +37,7 @@ fram4 {
   flex-grow: 0;
 }
 
-portf {
+#portf {
   width: 63px;
   height: 20px;
   font-family: 'Inter', sans-serif;
@@ -54,14 +54,14 @@ portf {
   flex-grow: 0;
 }
 
-rectang {
+#rectang {
   position: absolute;
   width: 1440px;
   height: 72px;
   background: #3e3c3c;
 }
 
-nam {
+#nam {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -75,7 +75,7 @@ nam {
   z-index: 99;
 }
 
-johndoe {
+#johndoe {
   width: 92px;
   height: 20px;
   font-family: 'Inter', sans-serif;
@@ -92,7 +92,7 @@ johndoe {
   flex-grow: 0;
 }
 
-about {
+#about {
   width: 45px;
   height: 20px;
   font-family: 'Inter', sans-serif;
@@ -109,7 +109,7 @@ about {
   flex-grow: 0;
 }
 
-contact {
+#contact {
   width: 59px;
   height: 20px;
   font-family: 'Inter', sans-serif;
@@ -126,7 +126,7 @@ contact {
   flex-grow: 0;
 }
 
-normal_btn {
+#normal_btn {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -139,7 +139,7 @@ normal_btn {
   border-radius: 8px;
 }
 
-icons {
+#icons {
   width: 24px;
   height: 24px;
   flex: none;
@@ -147,7 +147,7 @@ icons {
   flex-grow: 0;
 }
 
-union1 {
+#union1 {
   position: absolute;
   width: 22px;
   height: 18px;
@@ -156,7 +156,7 @@ union1 {
   background: #3e3c3c;
 }
 
-vectorx {
+#vectorx {
   position: absolute;
   left: 25%;
   right: 25%;
@@ -165,7 +165,7 @@ vectorx {
   border: 2px solid #67798e;
 }
 
-rec {
+#rec {
   box-sizing: border-box;
   position: absolute;
   left: 4.17%;
@@ -176,7 +176,7 @@ rec {
   border-radius: 4px;
 }
 
-social_icons {
+#social_icons {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -186,27 +186,27 @@ social_icons {
   top: 394px;
 }
 
-twitter {
+#twitter {
   flex: 1;
 }
 
-linkedin {
+#linkedin {
   flex: 1;
 }
 
-medium {
+#medium {
   flex: 1;
 }
 
-angel_list {
+#angel_list {
   flex: 1;
 }
 
-github {
+#github {
   flex: 1;
 }
 
-headline {
+#headline {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -219,7 +219,7 @@ headline {
   top: 72px;
 }
 
-primary_text {
+#primary_text {
   width: 566px;
   height: 160px;
   font-family: 'Crete Round';
@@ -233,7 +233,7 @@ primary_text {
   flex-grow: 0;
 }
 
-supporting_text {
+#supporting_text {
   width: 566px;
   height: 24px;
   font-family: 'Inter';
@@ -249,7 +249,7 @@ supporting_text {
   flex-grow: 0;
 }
 
-description {
+#description {
   width: 566px;
   height: 123px;
   font-family: 'Inter';
@@ -263,7 +263,7 @@ description {
   flex-grow: 0;
 }
 
-base1 {
+#base1 {
   position: absolute;
   width: 1440px;
   height: 870px;
@@ -271,7 +271,7 @@ base1 {
   background: #1c1a19;
 }
 
-illustration {
+#illustration {
   position: absolute;
   left: 96.37%;
   right: -96.23%;
@@ -280,7 +280,7 @@ illustration {
   transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
 }
 
-illustration_header {
+#illustration_header {
   position: absolute;
   width: 1003.13px;
   height: 769.27px;
@@ -294,7 +294,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  headline {
+  #headline {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -307,7 +307,7 @@ body {
     background: #1c1a19;
   }
 
-  primary_text {
+  #primary_text {
     width: 327px;
     height: 124px;
     font-family: 'Crete Round';
@@ -322,7 +322,7 @@ body {
     flex-grow: 0;
   }
 
-  supporting_text {
+  #supporting_text {
     width: 327px;
     height: 27px;
     font-family: 'Roboto';
@@ -338,7 +338,7 @@ body {
     flex-grow: 0;
   }
 
-  description {
+  #description {
     width: 327px;
     height: 123px;
     font-family: 'Poppins';
@@ -352,7 +352,7 @@ body {
     flex-grow: 0;
   }
 
-  social_icons {
+  #social_icons {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -363,7 +363,7 @@ body {
     flex-grow: 0;
   }
 
-  social_icons {
+  #social_icons {
     position: absolute;
     top: 490px;
     display: flex;
@@ -377,7 +377,7 @@ body {
     z-index: 99;
   }
 
-  hamburger {
+  #hamburger {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -390,11 +390,11 @@ body {
     border-radius: 8px;
   }
 
-  item_nav {
+  #item_nav {
     display: none;
   }
 
-  normal_btn {
+  #normal_btn {
     display: none;
   }
 }
