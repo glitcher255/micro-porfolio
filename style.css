@@ -6,8 +6,8 @@ to1_nav1 {
   position: absolute;
   width: 100%;
   height: 72px;
-  left: 0px;
-  top: 0px;
+  left: 1px;
+  top: 1px;
 }
 
 item_nav {
@@ -16,16 +16,15 @@ item_nav {
   align-items: center;
   padding: 0px;
   gap: 8px;
-
   position: absolute;
   width: 255px;
   height: 40px;
   right: 190px;
-  top: calc(50% - 40px/2);
+  top: calc(50% - 40px / 2);
   z-index: 99;
 }
 
-frame4 {
+fram4 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -38,10 +37,9 @@ frame4 {
   flex-grow: 0;
 }
 
-portfolio {
+portf {
   width: 63px;
   height: 20px;
-
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -50,22 +48,22 @@ portfolio {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
-rectangle {
+rectang {
   position: absolute;
   width: 1440px;
   height: 72px;
-  left: 0px;
-  top: 0px;
-  background: #3E3C3C;
+  left: 1px;
+  top: 1px;
+  background: #3e3c3c;
 }
 
-name {
+nam {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -77,8 +75,6 @@ name {
   left: 142px;
   top: 16px;
   z-index: 99;
-
-
 }
 
 johndoe {
