@@ -310,7 +310,7 @@ body {
   #primary_text {
     width: 327px;
     height: 124px;
-    font-family: 'Crete Round';
+    font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 56px;
@@ -325,7 +325,7 @@ body {
   #supporting_text {
     width: 327px;
     height: 27px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -341,7 +341,7 @@ body {
   #description {
     width: 327px;
     height: 123px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -385,5 +385,4 @@ body {
 
   #normal_btn {
     display: none;
-  }
-}
+  }}
