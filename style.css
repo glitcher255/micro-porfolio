@@ -387,6 +387,9 @@ li {
   }
 
   #illustration {
-    display: none;
+    background-image: url("./assets/Illustration.svg");
+    width: 147px;
+    height: 410px;
+    top: 70%;
   }
 }
