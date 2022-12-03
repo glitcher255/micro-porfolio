@@ -12,6 +12,10 @@ li {
   flex: 1;
 }
 
+ul {
+  padding: 0;
+}
+
 body {
   overflow-x: hidden;
   margin: 0;
@@ -297,13 +301,11 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
+  width: 350px;
   line-height: 52px;
   display: flex;
   align-items: center;
   color: #1c1a19;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 #frame44 {
@@ -580,7 +582,7 @@ body {
 #me_rectangle {
   position: absolute;
   width: 100%;
-  height: 1901px;
+  height: 2600px;
   background: #1c1a19;
   z-index: -1;
 }
@@ -664,7 +666,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12px 0;
   height: 48px;
 }
 
@@ -688,7 +689,7 @@ body {
   justify-content: center;
   position: relative;
   left: -99px;
-  top: 66px;
+  top: 55px;
 }
 
 #square_rectangle {
@@ -698,14 +699,17 @@ body {
   justify-content: center;
   position: relative;
   left: -119px;
-  top: 66px;
+  top: 55px;
 }
 
-##circle_rectangle {
+#circle_rectangle {
   width: 18px;
 height: 18px;
 background: #ff6b00;
 border-radius: 150px;
+position: relative;
+left: -70px;
+top: 55px;
 }
 
 @media only screen and (max-width: 800px) {
