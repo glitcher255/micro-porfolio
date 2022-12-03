@@ -648,17 +648,6 @@ body {
   width: 225.46px;
 }
 
-#frame30_rectangle {
-  width: 18px;
-  height: 18px;
-  background: #ff6b00;
-  transform: rotate(-45deg);
-  justify-content: center;
-  position: relative;
-  left: -99px;
-  top: 66px;
-}
-
 #language_text {
   height: 1px;
   font-family: 'inter', serif;
@@ -691,7 +680,18 @@ body {
   color: #fff;
 }
 
-#frame34_rectangle {
+#rectangle_rectangle {
+  width: 18px;
+  height: 18px;
+  background: #ff6b00;
+  transform: rotate(-45deg);
+  justify-content: center;
+  position: relative;
+  left: -99px;
+  top: 66px;
+}
+
+#square_rectangle {
   width: 18px;
   height: 18px;
   background: #ff6b00;
@@ -699,6 +699,13 @@ body {
   position: relative;
   left: -119px;
   top: 66px;
+}
+
+##circle_rectangle {
+  width: 18px;
+height: 18px;
+background: #ff6b00;
+border-radius: 150px;
 }
 
 @media only screen and (max-width: 800px) {
