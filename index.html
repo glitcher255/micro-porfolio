@@ -263,7 +263,24 @@
     </div>
   </div>
 
-
+  <div id="form">
+    <p id="form_text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+    <form id="formsubmit" action="https://formspree.io/f/xrgdnkkd"
+     method="POST">
+      <label>
+      <input class="form_inputs" type="text" placeholder="Full name" maxlength="30" required>
+      </label>
+      <div class="divide"><img src="./assets/Vector 4.png" alt=""></div>
+      <label>
+      <input class="form_inputs" type="email" placeholder="Email address" name="email" required>
+      </label>
+      <div class="divide"><img src="./assets/Vector 4.png" alt=""></div>
+      <label>
+      <textarea id="form_text_area" placeholder="Enter text here" name="message" maxlength="500" required></textarea>
+      </label>
+      <button id="form_button" class="orange_btns" type="submit"><p id="action_btn_text"> Get in touch</p></button>
+    </form>
+  </div>
 
 </body>
 </html>
