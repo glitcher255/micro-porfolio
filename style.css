@@ -772,6 +772,19 @@ body {
   height: 48px;
   background: #ff6b00;
   border: none;
+  height: 45px;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
 }
 
 @media only screen and (max-width: 800px) {
