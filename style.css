@@ -557,11 +557,12 @@ body {
   width: 375px;
   height: 563px;
   top: 4067px;
+  background: #1c1a19;
 }
 
 #me_primary_text {
   width: 327px;
-  height: 0;
+  height: 20px;
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
@@ -595,8 +596,8 @@ body {
   position: absolute;
   width: 100%;
   height: 2000px;
-  background: #1c1a19;
   z-index: -1;
+  background: #1c1a19;
 }
 
 #me_btn {
@@ -1028,13 +1029,77 @@ body {
 
   #about_me {
     top: 1850px;
-    width: calc(100% + 120px);
+    width: 100%;
+    left: 0;
     align-items: flex-start;
+    padding: 0 0 0 24px;
+  }
+
+  #about_me::after {
+    content: "";
+    border-style: none none solid none;
+    border-radius: 1px;
+    border-color: #fbf8f7;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    height: 1px;
+    width: 80%;
+    margin: 0 0 0 -40px;
   }
 
   #me_art {
     background-image: url("./assets/illustration_last_desktop.svg");
     width: 586px;
     height: 354px;
+    top: 70px;
+  }
+
+  #desktop_about_me_text {
+    margin: 0 0 0 40px;
+  }
+
+  #me_rectangle {
+    left: 0;
+    height: 1200px;
+  }
+
+  #me_vector {
+    display: none;
+  }
+
+  #skill {
+    top: 2400px;
+  }
+
+  #skill_parent {
+    display: flex;
+    flex-direction: row;
+    gap: 25%;
+    justify-content: center;
+  }
+
+  #form {
+    top: 3850px;
+    flex-direction: row;
+    width: 100%;
+    align-items: baseline;
+  }
+
+  #form_text {
+    width: 450px;
+    margin: 0;
+  }
+
+  #form_button {
+    margin: 0;
+  }
+
+  #form_submit {
+    width: calc(100% - 450px);
+  }
+
+  #form_text_area {
+    width: 100%;
   }
 }
