@@ -930,11 +930,10 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-
   #nav {
     display: none;
   }
-  
+
   #item_nav {
     right: 150px;
   }
@@ -954,7 +953,7 @@ body {
     height: 450px;
   }
 
-  #frame44{
+  #frame44 {
     width: calc(100% + 120px);
     height: 1px;
     position: relative;
@@ -1005,17 +1004,17 @@ body {
   #desktop_card_img {
     display: block;
   }
-  
+
   #desktop_card_title {
     display: block;
     width: 295px;
-  height: 81px;
-  font-family: 'Crete Round', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 44px;
-  color: #fff;
+    height: 81px;
+    font-family: 'Crete Round', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
   }
 
   #card_works {
@@ -1024,7 +1023,7 @@ body {
   }
 
   .desktop_delete_first {
-    display:none;
+    display: none;
   }
 
   #about_me {
