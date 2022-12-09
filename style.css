@@ -108,7 +108,23 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
+  animation-duration:0.5s;
+  animation-name:rotate;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
 }
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
 
 #about {
   width: 45px;
