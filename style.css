@@ -108,8 +108,8 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
-  animation-duration:0.5s;
-  animation-name:rotate;
+  animation-duration: 0.5s;
+  animation-name: rotate;
   animation-iteration-count: 2;
   animation-direction: alternate;
 }
@@ -118,6 +118,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -965,7 +966,7 @@ body {
 
   #img_placeholder {
     height: 450px;
-    transition: height 0.4s ease-in-out ;
+    transition: height 0.4s ease-in-out;
   }
 
   #img_placeholder:hover {

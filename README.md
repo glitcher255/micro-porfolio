@@ -83,7 +83,7 @@ Porfolio that displays perfectly on both desktop and mobile
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://glitcher255.github.io/micro-porfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
