@@ -10,18 +10,19 @@
 <body>
     <div id="appbar">
         <img src="./assets/App Bar - Compact - Dark - iOS.svg" alt="Application bar">
+        <button id="hamburger_button" class="hamburger_button"></button>
     </div>
 
     <header id="header">
         <div id="item_nav">
             <div>
-                <div id="portf"><p>portfolio</p></div>
+                <a onclick="close_button()" class="menu_link desktop_menu_link" id="portf" href="#section"><p>portfolio</p></a>
             </div>
             <div>
-                <div id="about"><p>About</p></div>
+                <a onclick="close_button()" class="menu_link desktop_menu_link" id="about" href="#about_me"><p>About</p></a>
             </div>
             <div>
-                <div id="contact"><p>Contact</p></div>
+                <a onclick="close_button()" class="menu_link desktop_menu_link" id="contact" href="#form"><p>Contact</p></a>
             </div>
           </div>
 
@@ -52,7 +53,7 @@
     <section id="section">
         <h1 id="h1"><p>Hey There, I'm Alex.<p></h1>
         <h2 id="h2"><p>I'm a Software Developer.</p></h2>
-        <div id="description"><p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p></div>
+        <h3 id="description"><p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p></h3>
 
         
     <ul id="ul">
@@ -299,5 +300,8 @@
     </form>
   </div>
  
+
+
+  <script src="script.js"></script>
 </body>
 </html>

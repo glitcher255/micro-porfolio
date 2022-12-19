@@ -39,7 +39,7 @@ body {
   height: 40px;
   right: 190px;
   top: calc(50% - 40px / 2);
-  z-index: 99;
+  z-index: 2;
 }
 
 #fram4 {
@@ -56,20 +56,21 @@ body {
 }
 
 #portf {
-  width: 63px;
-  height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.desktop_menu_link {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: #fff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 #rectang {
@@ -90,7 +91,7 @@ body {
   height: 40px;
   left: 30px;
   top: 16px;
-  z-index: 99;
+  z-index: 1;
 }
 
 #johndoe {
@@ -125,34 +126,18 @@ body {
 }
 
 #about {
-  width: 45px;
-  height: 20px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
   display: flex;
   align-items: center;
   text-align: center;
-  color: #fff;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 #contact {
-  width: 59px;
-  height: 20px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
   display: flex;
   align-items: center;
   text-align: center;
-  color: #fff;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -832,13 +817,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 40px 1px;
+    padding: 40px 0 0 20px;
     gap: 8px;
     position: absolute;
-    width: calc(100% - 50px);
+    width: 100%;
     height: 590px;
     top: 92px;
-    left: 33px;
+    left: 0;
+    right: 0;
     background: #1c1a19;
   }
 
@@ -899,7 +885,7 @@ body {
     flex: none;
     order: 3;
     flex-grow: 0;
-    z-index: 99;
+    z-index: 1;
   }
 
   #nav {
@@ -916,20 +902,35 @@ body {
   }
 
   #header {
-    top: 92px;
+    width: 100%;
+    height: 100%;
     display: none;
   }
 
   #appbar {
     display: block;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 92px;
     background: #3c3a39;
+    z-index: 3;
   }
 
   #item_nav {
     display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-left: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100vh;
+     height: 100vh;
+     background: #3C3A39;
+     gap: 50px;
   }
 
   #normal_btn {
@@ -942,7 +943,35 @@ body {
     height: 410px;
     top: 65%;
   }
+
+  .hamburger_button {
+    position: absolute;
+    left: 306px;
+    top: 40px;
+    background: none;
+    color: none;
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+
+  }
+
+  .menu_link {
+    font-size: 45px;
+    height: 50px;
+    padding-bottom: 50px;
+    width: 100vh;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #6F6C6B;
+  }
 }
+
+
+
+
+
+
 
 @media only screen and (min-width: 768px) {
   #nav {
