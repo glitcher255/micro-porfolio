@@ -1,27 +1,19 @@
 {
-  "name": "my-portfolio",
+  "name": "micro-porfolio",
   "version": "1.0.0",
-  "description": "My personal portfolio for web and software developer.",
-  "main": "index.js",
+  "description": "This is the feature branch\r project:\r <a name=\"readme-top\"></a>",
+  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DavidCazco36/My-Portfolio.git"
+    "url": "git+https://github.com/glitcher255/micro-porfolio.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DavidCazco36/My-Portfolio/issues"
+    "url": "https://github.com/glitcher255/micro-porfolio/issues"
   },
-  "homepage": "https://github.com/DavidCazco36/My-Portfolio#readme",
-  "devDependencies": {
-    "hint": "^7.1.3",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^21.0.0",
-    "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0"
-  }
+  "homepage": "https://github.com/glitcher255/micro-porfolio#readme"
 }
