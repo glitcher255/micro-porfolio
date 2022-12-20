@@ -7,10 +7,8 @@ document.getElementsByClassName('hamburger_button')[0].addEventListener('click',
         document.getElementById('header').style.display = 'none'
         document.getElementsByClassName('hamburger_button')[0].background = "#3c3a39"
         document.getElementById('hamburger_button_x').style.display = "none"
-        
         document.getElementsByTagName('body')[0].style.overflow = 'scroll'
         is_on = false
-        console.log (is_on)
     }
 
     else {
@@ -20,7 +18,6 @@ document.getElementsByClassName('hamburger_button')[0].addEventListener('click',
     document.getElementById('hamburger_button_x').style.display = "block"
     document.getElementsByTagName('body')[0].style.overflow = 'hidden'
     is_on = true
-    console.log (is_on)
     }
 })
 
