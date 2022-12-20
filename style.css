@@ -925,14 +925,14 @@ body {
     position: fixed;
     left: 0;
     right: 0;
-    top: 0;
+    top: -60px;
     bottom: 0;
     padding-left: 10px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     width: 100vh;
-    height: 100vh;
+    height: 110vh;
     background: #3c3a39;
     gap: 50px;
   }
@@ -957,12 +957,17 @@ body {
     z-index: 3;
     width: 50px;
     height: 50px;
+    border: none;
+  }
+
+  #hamburger_button_x {
+    display: none;
   }
 
   .menu_link {
-    font-size: 45px;
+    font-size: 30px;
     height: 50px;
-    padding-bottom: 50px;
+    padding: 0 0 20px 30px;
     width: 100vh;
     border-bottom: solid;
     border-width: 1px;
