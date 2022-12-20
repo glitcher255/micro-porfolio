@@ -923,6 +923,7 @@ body {
   #item_nav {
     display: none;
     position: fixed;
+    padding-top: 20px;
     left: 0;
     right: 0;
     top: 89px;
