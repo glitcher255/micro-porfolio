@@ -88,3 +88,25 @@ document.getElementById("cancel-icon").addEventListener('click', function() {
     document.getElementById("popup-container").style.display = "none"
 
 })
+
+
+let form_error
+
+document.getElementsByClassName("form_email")[0].addEventListener('blur', function() {
+    let lowercased = document.getElementsByClassName("form_email")[0].value.toLowerCase()
+    if (document.getElementsByClassName("form_email")[0].value != lowercased) {
+        document.getElementById('form_email_error').innerHTML = "Use lower caps for email input"
+        form_error = true
+    }
+    else {
+        document.getElementById('form_email_error').innerHTML = ""
+        form_error = false
+    }
+})
+
+document.getElementById('form').addEventListener('submit', function(q) {
+    q.preventDefault()
+    if (form_error != true) {
+        document.getElementById("form_submit").submit();
+    }
+})
