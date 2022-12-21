@@ -45,15 +45,14 @@ const card_info = {
     
 
 
-
+//Loop for repeat of card creation
 for (let xy = 0; xy < 6; xy++){
-    console.log('test')
+    //creation step
     let cloned_clone = document.getElementsByClassName("card_clone")[0].cloneNode(true)
     document.getElementById("frame43").appendChild(cloned_clone)
 
         
-
-        console.log (xy)
+    //card filling info with card_info array
         document.getElementsByClassName("desktop_card_img_class")[xy].src = card_info.image[xy]
         document.getElementsByClassName("desktop_card_title")[xy].innerHTML = card_info.name[xy]
         document.getElementsByClassName("card_secondary")[xy].innerHTML = card_info.description[xy]
@@ -62,30 +61,30 @@ for (let xy = 0; xy < 6; xy++){
         document.getElementsByClassName("card_btns3")[xy].innerHTML = card_info.technologies[0].tech_stack[2]
 
     
+        //add event listener to each card's button for the popup and fill popup info
+        document.getElementsByClassName('action_btns')[xy].addEventListener('click', function popup_manager () {
+        
+            document.getElementById("popup-container").style.display = "flex"
+        
+            document.getElementById("p-button-container-text").innerHTML = card_info.description[xy]
+            document.getElementById("img-project").src = card_info.image[xy]
+            document.getElementById("popup-title").innerHTML = card_info.name[xy]
+            document.getElementById("live-link").href = card_info.live_link[xy]
+            document.getElementById("source-link").href = card_info.source_link[xy]
+        
+            document.getElementById('popup-tag1').innerHTML = card_info.technologies[0].tech_stack[0]
+            document.getElementById('popup-tag2').innerHTML = card_info.technologies[0].tech_stack[1]
+            document.getElementById('popup-tag3').innerHTML = card_info.technologies[0].tech_stack[2]
+        
+        })
+
 }
 
 
 
 
-
-
-
-let test = 0
-document.getElementsByClassName('action_btns')[test].addEventListener('click', function () {
-    let the_parent = this.parentNode.parentNode.id
-
-    document.getElementById("popup-container").style.display = "flex"
-
-    document.getElementById("p-button-container-text").innerHTML = card_info.description[test]
-    document.getElementById("img-project").src = card_info.image[test]
-    document.getElementById("popup-title").innerHTML = card_info.name[test]
-    document.getElementById("live-link").href = card_info.live_link[test]
-    document.getElementById("source-link").href = card_info.source_link[test]
-
-    document.getElementById('popup-tag1').innerHTML = card_info.technologies[test].tech_stack[0]
-    document.getElementById('popup-tag2').innerHTML = card_info.technologies[test].tech_stack[1]
-    document.getElementById('popup-tag3').innerHTML = card_info.technologies[test].tech_stack[2]
+//x icon on popup container to close
+document.getElementById("cancel-icon").addEventListener('click', function() {
+    document.getElementById("popup-container").style.display = "none"
 
 })
-
-
