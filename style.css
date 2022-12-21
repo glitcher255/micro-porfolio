@@ -7,10 +7,6 @@
   text-decoration: none;
 }
 
-#CARD_HIDDEN {
-  display: none;
-}
-
 li {
   list-style: none;
   flex: 1;
@@ -978,77 +974,7 @@ body {
     border-width: 1px;
     border-color: #6f6c6b;
   }
-
-
-
-  #popup-container {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    position:fixed;
-    width:100%;
-    height:100vh;
-    padding: 40px 18px;
-    background: rgb(0,0,0,0.6);
-  }
-  #popup-window {
-    display:flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background-color: #F4F1F0;
-    padding:10px;
-    justify-content: space-evenly;
-  }
-  #popup-tags {
-    display:flex;
-    padding:0;
-    list-style: none;
-  }
-  #popup-tags li {
-    border: 1px solid black;
-    margin:8px;
-    padding:0 8px;
-    font-size: 13px;
-  }
-  #img-description-container {
-    display: flex;
-    flex-direction: column;
-  }
-  #p-buttons-container {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
-  }
-  #title-x-container {
-    border:5px solid red;
-    height: 50px;
-    width: 100px;
-  }
-  #img-project {
-    height: 327px;
-  }
-  #popup-buttons {
-    display:flex;
-  }
-  #popup-window button{
-    width: 110px;
-    background-color: #FF6B00;
-    border: none;
-    color:white;
-    font-family: 'Inter', sans-serif;
-    font-size: 17px;
-    margin: 10px;
-  }
-  #popup-window p {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-  }
 }
-
-
 
 @media only screen and (min-width: 768px) {
   #nav {
@@ -1102,6 +1028,10 @@ body {
   }
 
   #action_btn {
+    display: none;
+  }
+
+  #card1 {
     display: none;
   }
 
@@ -1238,138 +1168,4 @@ body {
     height: 739px;
     left: 51%;
   }
-
-  #popup-container {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  position:fixed;
-  width:100%;
-  height:100vh;
-  padding: 100px 18px;
-  background: rgb(0,0,0,0.6);
-}
-#popup-window {
-  display:flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  background-color: #F4F1F0;
-  padding:10px;
-  justify-content: space-evenly;
-}
-#popup-tags {
-  display:flex;
-  padding:0;
-  list-style: none;
-}
-#popup-tags li {
-  border: 1px solid black;
-  margin:8px;
-  padding:0 8px;
-  font-size: 13px;
-}
-#img-description-container {
-  display: flex;
-  flex-direction: row;
-}
-#p-buttons-container {
-  display:flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 10px;
-}
-#title-x-container {
-  border:5px solid red;
-  height: 50px;
-  width: 100px;
-}
-#img-project {
-  height: 400px;
-}
-#popup-buttons {
-  display:flex;
-}
-#popup-window button{
-  width: 110px;
-  background-color: #FF6B00;
-  border: none;
-  color:white;
-  font-family: 'Inter', sans-serif;
-  font-size: 17px;
-  margin: 10px;
-}
-#popup-window p {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-}
-
-
-
-#popup-container {
-  display:none;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  position:fixed;
-  width:100%;
-  height:100vh;
-  padding: 100px 18px;
-  background: rgb(0,0,0,0.6);
-}
-#popup-window {
-  display:flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  background-color: #F4F1F0;
-  padding:10px;
-  justify-content: space-evenly;
-}
-#popup-tags {
-  display:flex;
-  padding:0;
-  list-style: none;
-}
-#popup-tags li {
-  border: 1px solid black;
-  margin:8px;
-  padding:0 8px;
-  font-size: 13px;
-}
-#img-description-container {
-  display: flex;
-  flex-direction: row;
-}
-#p-buttons-container {
-  display:flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 10px;
-}
-#title-x-container {
-  border:5px solid red;
-  height: 50px;
-  width: 100px;
-}
-#img-project {
-  height: 400px;
-}
-#popup-buttons {
-  display:flex;
-}
-#popup-window button{
-  width: 110px;
-  background-color: #FF6B00;
-  border: none;
-  color:white;
-  font-family: 'Inter', sans-serif;
-  font-size: 17px;
-  margin: 10px;
-}
-#popup-window p {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-}
 }
