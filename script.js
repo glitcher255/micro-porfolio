@@ -125,9 +125,13 @@ document.getElementsByClassName("form_email")[0].addEventListener('blur', functi
     }
 })
 
+
 document.getElementById('form').addEventListener('submit', function(q) {
     q.preventDefault()
     if (form_error != true) {
+        //no user data found - creates user data
+            user_data = [document.getElementsByClassName("form_username")[0].value, document.getElementsByClassName("form_email")[0].value, document.getElementById("form_text_area").value]
+            localStorage.setItem("user_data", user_data)
         document.getElementById("form_submit").submit();
     }
 })
@@ -137,3 +141,17 @@ document.getElementById('form_button').addEventListener('click', function() {
     document.getElementById('form_email_error').innerHTML = "Use lower caps for email input"
     }
 })
+
+
+
+let user_data = []
+//fill form with data if data already exists
+if (localStorage.getItem("user_data")) {
+    const user_data_array = localStorage.getItem("user_data").split(",")
+    document.getElementsByClassName("form_username")[0].value = user_data_array[0]
+    document.getElementsByClassName("form_email")[0].value = user_data_array [1]
+    document.getElementById("form_text_area").value = user_data_array[2]
+
+}
+
+//localStorage.clear()
