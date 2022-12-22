@@ -1,30 +1,30 @@
-let is_on = Boolean;
+let isOn = Boolean;
 
 document.getElementsByClassName('hamburger_button')[0].addEventListener('click', () => {
-  if (is_on === true) {
+  if (isOn === true) {
     document.getElementById('item_nav').style.display = 'none';
     document.getElementById('header').style.display = 'none';
     document.getElementsByClassName('hamburger_button')[0].background = '#3c3a39';
     document.getElementById('hamburger_button_x').style.display = 'none';
     document.getElementsByTagName('body')[0].style.overflow = 'scroll';
-    is_on = false;
+    isOn = false;
   } else {
     document.getElementById('item_nav').style.display = 'flex';
     document.getElementById('header').style.display = 'flex';
     document.getElementsByClassName('hamburger_button')[0].background = 'none';
     document.getElementById('hamburger_button_x').style.display = 'block';
     document.getElementsByTagName('body')[0].style.overflow = 'hidden';
-    is_on = true;
+    isOn = true;
   }
 });
 
-function close_button() {
+function closeButton() {
   if (screen.width < 768) {
     document.getElementById('item_nav').style.display = 'none';
     document.getElementById('header').style.display = 'none';
     document.getElementById('hamburger_button_x').style.display = 'none';
     document.getElementsByTagName('body')[0].style.overflow = 'scroll';
-    is_on = false;
+    isOn = false;
   }
 }
 
@@ -93,42 +93,43 @@ document.getElementById('btn_enable').addEventListener('click', () => {
   document.getElementById('popup-tag4').innerHTML = card_info.technologies[0].RB_tech_stack[3];
 });
 
-let form_error;
+let formError;
 
 document.getElementsByClassName('form_email')[0].addEventListener('blur', () => {
   const lowercased = document.getElementsByClassName('form_email')[0].value.toLowerCase();
-  if (document.getElementsByClassName('form_email')[0].value != lowercased) {
+  if (document.getElementsByClassName('form_email')[0].value !== lowercased) {
     document.getElementById('form_email_error').innerHTML = '';
-    form_error = true;
+    formError = true;
   } else {
     document.getElementById('form_email_error').innerHTML = '';
-    form_error = false;
+    formError = false;
   }
 });
 
 document.getElementById('form').addEventListener('submit', (q) => {
   q.preventDefault();
-  if (form_error != true) {
+  if (formError !== true) {
     // no user data found - creates user data
-    user_data = [document.getElementsByClassName('form_username')[0].value, document.getElementsByClassName('form_email')[0].value, document.getElementById('form_text_area').value];
-    localStorage.setItem('user_data', user_data);
+    userData = [document.getElementsByClassName('form_username')[0].value, document.getElementsByClassName('form_email')[0].value, document.getElementById('form_text_area').value];
+    localStorage.setItem('userData', userData);
     document.getElementById('form_submit').submit();
   }
 });
 
 document.getElementById('form_button').addEventListener('click', () => {
-  if (form_error === true) {
+  if (formError === true) {
     document.getElementById('form_email_error').innerHTML = 'Use lower caps for email input';
   }
 });
 
-let user_data = [];
+let userData = [];
 // fill form with data if data already exists
-if (localStorage.getItem('user_data')) {
-  const user_data_array = localStorage.getItem('user_data').split(',');
-  document.getElementsByClassName('form_username')[0].value = user_data_array[0];
-  document.getElementsByClassName('form_email')[0].value = user_data_array[1];
-  document.getElementById('form_text_area').value = user_data_array[2];
+if (localStorage.getItem('userData')) {
+  const userDataArray = localStorage.getItem('userData').split(',');
+  const [one, two, three] = userDataArray;
+  document.getElementsByClassName('form_username')[0].value = userDataArray[one];
+  document.getElementsByClassName('form_email')[0].value = userDataArray[two];
+  document.getElementById('form_text_area').value = userDataArray[three];
 }
 
 // localStorage.clear()
