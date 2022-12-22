@@ -33,13 +33,14 @@ function close_button() {
 
 
 const card_info = {
-    image: ["./assets/1Placeholder.svg", "./assets/2ndPlaceholder.svg", "./assets/3rdPlaceholder.svg", "./assets/1Placeholder.svg", "./assets/2ndPlaceholder.svg", "./assets/3rdPlaceholder.svg"],
-    name: ["Profesional Art Printing Data More", "Data Dashboard Healthcare", "Website Protfolio", "Profesional Art Printing Data More", "Data Dashboard Healthcare", "Website Protfolio"],
-    description: ["A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard","A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard","A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard","A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard","A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard","A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard"],
+    image: ["./assets/1Placeholder.svg", "./assets/2ndPlaceholder.svg", "./assets/3rdPlaceholder.svg", "./assets/1Placeholder.svg", "./assets/2ndPlaceholder.svg", "./assets/3rdPlaceholder.svg", "./assets/Snapshoot Portfolio.svg", "./assets/Img Placeholder.svg"],
+    name: ["Profesional Art Printing Data More", "Data Dashboard Healthcare", "Website Protfolio", "Profesional Art Printing Data More", "Data Dashboard Healthcare", "Website Protfolio", "Multi-Post Stories"],
+    description: ["A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard","A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard","A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard","A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard","A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard","A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard", "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text."],
     live_link: ["https://rawcdn.githack.com/glitcher255/micro-porfolio/3aef2ff8602559c098666dcf4522e7baa82ca27c/index.html","https://rawcdn.githack.com/glitcher255/micro-porfolio/3aef2ff8602559c098666dcf4522e7baa82ca27c/index.html","https://rawcdn.githack.com/glitcher255/micro-porfolio/3aef2ff8602559c098666dcf4522e7baa82ca27c/index.html","https://rawcdn.githack.com/glitcher255/micro-porfolio/3aef2ff8602559c098666dcf4522e7baa82ca27c/index.html","https://rawcdn.githack.com/glitcher255/micro-porfolio/3aef2ff8602559c098666dcf4522e7baa82ca27c/index.html","https://rawcdn.githack.com/glitcher255/micro-porfolio/3aef2ff8602559c098666dcf4522e7baa82ca27c/index.html"],
     source_link: ["https://github.com/DavidCazco36/My-Portfolio", "https://github.com/DavidCazco36/My-Portfolio", "https://github.com/DavidCazco36/My-Portfolio", "https://github.com/DavidCazco36/My-Portfolio", "https://github.com/DavidCazco36/My-Portfolio", "https://github.com/DavidCazco36/My-Portfolio"],
     technologies: [{
-        tech_stack:["html", "bootstrap", "Ruby"]
+        tech_stack:["html", "bootstrap", "Ruby"],
+        RB_tech_stack:["css", "html", "bootstrap", "ruby"]
     }]
     }
     
@@ -67,7 +68,7 @@ for (let xy = 0; xy < 6; xy++){
             document.getElementById("popup-container").style.display = "flex"
         
             document.getElementById("p-button-container-text").innerHTML = card_info.description[xy]
-            document.getElementById("img-project").src = card_info.image[xy]
+            document.getElementById("img-project").src = card_info.image[6]
             document.getElementById("popup-title").innerHTML = card_info.name[xy]
             document.getElementById("live-link").href = card_info.live_link[xy]
             document.getElementById("source-link").href = card_info.source_link[xy]
@@ -75,6 +76,7 @@ for (let xy = 0; xy < 6; xy++){
             document.getElementById('popup-tag1').innerHTML = card_info.technologies[0].tech_stack[0]
             document.getElementById('popup-tag2').innerHTML = card_info.technologies[0].tech_stack[1]
             document.getElementById('popup-tag3').innerHTML = card_info.technologies[0].tech_stack[2]
+            document.getElementById('popup-tag4').style.display = "none"
         
         })
 
@@ -87,4 +89,23 @@ for (let xy = 0; xy < 6; xy++){
 document.getElementById("cancel-icon").addEventListener('click', function() {
     document.getElementById("popup-container").style.display = "none"
 
+})
+
+
+document.getElementById('btn_enable').addEventListener('click', function() {
+    document.getElementById("popup-container").style.display = "flex"
+        
+    document.getElementById("p-button-container-text").innerHTML = card_info.description[6]
+    document.getElementById("img-project").src = card_info.image[7]
+    document.getElementById("popup-title").innerHTML = card_info.name[6]
+    document.getElementById("live-link").href = card_info.live_link[0]
+    document.getElementById("source-link").href = card_info.source_link[0]
+
+    console.log (card_info.technologies[0].RB_tech_stack)
+    document.getElementById('popup-tag1').innerHTML = card_info.technologies[0].RB_tech_stack[0]
+    document.getElementById('popup-tag2').innerHTML = card_info.technologies[0].RB_tech_stack[1]
+    document.getElementById('popup-tag3').innerHTML = card_info.technologies[0].RB_tech_stack[2]
+    document.getElementById('popup-tag4').style.display = "list-item"
+    document.getElementById('popup-tag4').innerHTML = card_info.technologies[0].RB_tech_stack[3]
+    
 })
