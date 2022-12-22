@@ -1382,6 +1382,19 @@ body {
     border: 1px solid;
   }
 
+  #source-link button {
+    background-color: #ff6b00;
+    color: white;
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    margin: 10px;
+    padding: 10px 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid;
+  }
+  
   #live-link button:hover {
     background: #fff5e1;
     color: #ff6b00;
@@ -1396,19 +1409,6 @@ body {
     border: solid;
     border-color: #ff6b00;
     border-width: 1px;
-  }
-
-  #source-link button {
-    background-color: #ff6b00;
-    color: white;
-    font-family: Inter, sans-serif;
-    font-size: 17px;
-    margin: 10px;
-    padding: 10px 22px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid;
   }
 
   #source-link button:hover {
