@@ -10,18 +10,21 @@
 <body>
     <div id="appbar">
         <img src="./assets/App Bar - Compact - Dark - iOS.svg" alt="Application bar">
+        <button id="hamburger_button" class="hamburger_button">
+          <img id="hamburger_button_x" src="./assets/xxxedit.jpg" alt="">
+        </button>
     </div>
 
     <header id="header">
         <div id="item_nav">
             <div>
-                <div id="portf"><p>portfolio</p></div>
+                <a onclick="close_button()" class="menu_link desktop_menu_link" id="portf" href="#section"><p>portfolio</p></a>
             </div>
             <div>
-                <div id="about"><p>About</p></div>
+                <a onclick="close_button()" class="menu_link desktop_menu_link" id="about" href="#about_me"><p>About</p></a>
             </div>
             <div>
-                <div id="contact"><p>Contact</p></div>
+                <a onclick="close_button()" class="menu_link desktop_menu_link" id="contact" href="#form"><p>Contact</p></a>
             </div>
           </div>
 
@@ -52,7 +55,7 @@
     <section id="section">
         <h1 id="h1"><p>Hey There, I'm Alex.<p></h1>
         <h2 id="h2"><p>I'm a Software Developer.</p></h2>
-        <div id="description"><p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p></div>
+        <h3 id="description"><p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p></h3>
 
         
     <ul id="ul">
@@ -105,132 +108,14 @@
                 <li class="RB_tags"><p class="RB_tags_text">bootstrap</p></li>
                 <li class="RB_tags"><p class="RB_tags_text">ruby</p></li>
             </ul>
-            <a href="https://github.com/glitcher255/micro-porfolio"><div id="btn_enable" class="orange_btns"><p id="btn_enable_text">See Project</p></div></a>
+            <a><div id="btn_enable" class="orange_btns"><p id="btn_enable_text">See Project</p></div></a>
           </div>
         </div>
           
 
         <ul id="frame43">
 
-          <div id="card_works" class="desktop_card_works1">
-            <div id="action">
-              <div id="desktop_card_img"> <img src="./assets/1Placeholder.svg" alt=""></div>
-              <img id="card1" src="./assets/Mask Group.png" alt="Professional art data">
-            </div>
-            <a href="https:github.com"><div id="action_btn1" class="orange_btns card1_btn"><p id="action_btn_text">See Project</p>
-            </div></a>
 
-            <li id="card_data">
-              <div id="card_title"><p>Profesional Art Printing Data</p></div>
-              <div id="card_secondary" class="desktop_delete_first"><p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p></div>
-              <ul id="card_tags">
-                <li class="card_btns desktop_delete_first"><div class="card_btns_font">html</div></li>
-                  <li class="card_btns desktop_delete_first"><div class="card_btns_font">bootstrap</div></li>
-                  <li class="card_btns desktop_delete_first"><div class="card_btns_font">Ruby</div></li>
-                  </ul>
-            </li>
-          </div>
-
-
-          <div id="card_works" class="desktop_card_works2">
-            <div id="action">
-              <div id="desktop_card_img"> <img src="./assets/2ndPlaceholder.svg" alt="Data dashboard healthcare"></div>
-              <img id="card1" src="./assets/Mask Group.png" alt="Professional art data">
-            </div>
-            <a href="https:github.com"><div id="action_btn" class="orange_btns"><p id="action_btn_text">See Project</p>
-            </div></a>
-
-            <li id="card_data">
-              <div id="desktop_card_title"><p>Data Dashboard Healthcare</p></div>
-              <div id="card_title"><p>Profesional Art Printing Data</p></div>
-              <div id="card_secondary"><p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p></div>
-              <ul id="card_tags">
-                <li class="card_btns"><div class="card_btns_font">html</div></li>
-                  <li class="card_btns"><div class="card_btns_font">bootstrap</div></li>
-                  <li class="card_btns"><div class="card_btns_font">Ruby</div></li>
-                  </ul>
-            </li>
-          </div>
-
-          <div id="card_works" class="desktop_card_works3">
-            <div id="action">
-              <div id="desktop_card_img"> <img src="./assets/3rdPlaceholder.svg" alt="Website Protfolio "></div>
-              <img id="card1" src="./assets/Mask Group.png" alt="Professional art data">
-            </div>
-            <a href="https:github.com"><div id="action_btn" class="orange_btns"><p id="action_btn_text">See Project</p>
-            </div></a>
-
-            <li id="card_data">
-              <div id="desktop_card_title"><p>Website Protfolio</p></div>
-              <div id="card_title"><p>Profesional Art Printing Data</p></div>
-              <div id="card_secondary"><p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p></div>
-              <ul id="card_tags">
-                <li class="card_btns"><div class="card_btns_font">html</div></li>
-                  <li class="card_btns"><div class="card_btns_font">bootstrap</div></li>
-                  <li class="card_btns"><div class="card_btns_font">Ruby</div></li>
-                  </ul>
-            </li>
-          </div>
-
-          <div id="card_works" class="desktop_card_works1">
-            <div id="action">
-              <div id="desktop_card_img"> <img src="./assets/1stPlaceholder.svg" alt="Profesional Art Printing Data More"></div>
-              <img id="card1" src="./assets/Mask Group.png" alt="Professional art data">
-            </div>
-            <a href="https:github.com"><div id="action_btn" class="orange_btns"><p id="action_btn_text">See Project</p>
-            </div></a>
-
-            <li id="card_data">
-              <div id="desktop_card_title"><p>Profesional Art Printing Data More</p></div>
-              <div id="card_title"><p>Profesional Art Printing Data</p></div>
-              <div id="card_secondary"><p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p></div>
-              <ul id="card_tags">
-                <li class="card_btns"><div class="card_btns_font">html</div></li>
-                  <li class="card_btns"><div class="card_btns_font">bootstrap</div></li>
-                  <li class="card_btns"><div class="card_btns_font">Ruby</div></li>
-                  </ul>
-            </li>
-          </div>
-
-          <div id="card_works" class="desktop_card_works2">
-            <div id="action">
-              <div id="desktop_card_img"> <img src="./assets/2ndPlaceholder.svg" alt="Data dashboard healthcare"></div>
-              <img id="card1" src="./assets/Mask Group.png" alt="Professional art data">
-            </div>
-            <a href="https:github.com"><div id="action_btn" class="orange_btns"><p id="action_btn_text">See Project</p>
-            </div></a>
-
-            <li id="card_data">
-              <div id="desktop_card_title">Data Dashboard Healthcare</div>
-              <div id="card_title"><p>Profesional Art Printing Data</p></div>
-              <div id="card_secondary"><p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p></div>
-              <ul id="card_tags">
-                <li class="card_btns"><div class="card_btns_font">html</div></li>
-                  <li class="card_btns"><div class="card_btns_font">bootstrap</div></li>
-                  <li class="card_btns"><div class="card_btns_font">Ruby</div></li>
-                  </ul>
-            </li>
-          </div>
-
-          <div id="card_works" class="desktop_card_works3">
-            <div id="action">
-              <div id="desktop_card_img"> <img src="./assets/3rdPlaceholder.svg" alt="Professional art data"></div>
-              <img id="card1" src="./assets/Mask Group.png" alt="Professional art data">
-            </div>
-            <a href="https:github.com"><div id="action_btn" class="orange_btns"><p id="action_btn_text">See Project</p>
-            </div></a>
-
-            <li id="card_data">
-              <div id="desktop_card_title">Website Protfolio</div>
-              <div id="card_title"><p>Profesional Art Printing Data</p></div>
-              <div id="card_secondary"><p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p></div>
-              <ul id="card_tags">
-                <li class="card_btns"><div class="card_btns_font">html</div></li>
-                  <li class="card_btns"><div class="card_btns_font">bootstrap</div></li>
-                  <li class="card_btns"><div class="card_btns_font">Ruby</div></li>
-                  </ul>
-            </li>
-          </div>
 
         </ul>
       </div>
@@ -299,5 +184,57 @@
     </form>
   </div>
  
+
+
+<div id="CARD_HIDDEN">
+  <div id="card_works" class="desktop_card_works2 card_clone">
+    <div id="action">
+      <div id="desktop_card_img" class="desktop_card_img"> <img class="desktop_card_img_class" src="" alt=""></div>
+      <img id="card1" src="./assets/Mask Group.png" alt="Professional art data">
+    </div>
+    <a href="#"><div id="action_btn" class="orange_btns action_btns"><p id="action_btn_text">See Project</p>
+    </div></a>
+
+    <li id="card_data">
+      <div id="desktop_card_title" class="desktop_card_title"><p></p></div>
+      <div id="card_title"><p>Profesional Art Printing Data</p></div>
+      <div id="card_secondary" class="card_secondary"><p></p></div>
+      <ul id="card_tags">
+        <li class="card_btns card_btns1"><div class="card_btns_font"></div></li>
+          <li class="card_btns card_btns2"><div class="card_btns_font"></div></li>
+          <li class="card_btns card_btns3"><div class="card_btns_font"></div></li>
+          </ul>
+    </li>
+  </div>
+</div>
+
+
+<div id="popup-container">
+  <div id="popup-window">
+    <div>
+    <div id="title-x-container">
+      <h1 id="popup-title">Title the asdasd asdasd asdasda asdasd</h1>
+      <img id="cancel-icon" src="./assets/Icon-Cancel-2.png">
+    </div>
+    <ul id="popup-tags">
+      <li id="popup-tag1" class="sublist"></li>
+      <li id="popup-tag2" class="sublist"></li>
+      <li id="popup-tag3" class="sublist"></li>
+      <li id="popup-tag4" class="sublist"></li>
+    </ul> 
+  </div>
+    <div id="img-description-container">
+      <img id="img-project" src="">
+      <div id="p-buttons-container">
+      <p id="p-button-container-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eius expedita accusamus explicabo ipsum sed! Explicabo odit quae repellat praesentium vitae ipsum possimus, amet aliquam? Deserunt doloremque suscipit ad non.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eius expedita accusamus explicabo ipsum sed! Explicabo odit quae repellat praesentium vitae ipsum possimus, amet aliquam? Deserunt doloremque suscipit ad non.</p>
+      <div id="popup-buttons">
+      <a id="live-link" href=""> <button>See live <img src="./assets/arrowcircleorange.png" alt=""></button> </a>
+        <a id="source-link" href=""> <button> See Source <img src="./assets/githubwhiteorange.png" alt=""></button>  </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="script.js"></script>
 </body>
 </html>

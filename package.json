@@ -1,0 +1,25 @@
+{
+  "name": "micro-porfolio",
+  "version": "1.0.0",
+  "description": "This is the feature branch\r project:\r <a name=\"readme-top\"></a>",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glitcher255/micro-porfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glitcher255/micro-porfolio/issues"
+  },
+  "homepage": "https://github.com/glitcher255/micro-porfolio#readme",
+  "devDependencies": {
+    "stylelint": "^14.16.0",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-csstree-validator": "^2.0.0",
+    "stylelint-scss": "^4.3.0"
+  }
+}
