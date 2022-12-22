@@ -1066,7 +1066,7 @@ body {
     font-family: Inter, sans-serif;
     font-size: 17px;
     margin: 0 12px;
-    padding: 11.5px 10px 11.5px 10px;
+    padding: 11.5px 10px;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -1313,7 +1313,7 @@ body {
   #popup-title {
     font-family: "Crete Round", sans-serif;
     font-size: 32px;
-    margin: 5px 0 0 0;
+    margin: 5px 0 0;
   }
 
   #cancel-icon {
@@ -1336,7 +1336,7 @@ body {
   }
 
   #popup-tags li:hover {
-    background-color: #E05304;
+    background-color: #e05304;
   }
 
   #img-description-container {
@@ -1356,7 +1356,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 12px 12px 12px;
+    padding: 0 12px 12px;
   }
 
   #img-project {
@@ -1371,12 +1371,11 @@ body {
 
   #live-link button {
     background-color: #ff6b00;
-    border: none;
     color: white;
     font-family: Inter, sans-serif;
     font-size: 17px;
     margin: 10px;
-    padding: 11.5px 22px 11.5px 22px;
+    padding: 11.5px 22px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1384,7 +1383,7 @@ body {
   }
 
   #live-link button:hover {
-    background: #FFF5E1;
+    background: #fff5e1;
     color: #ff6b00;
     border: solid;
     border-color: #ff6b00;
@@ -1392,8 +1391,8 @@ body {
   }
 
   #live-link button:active {
-    background: #E05304;;
-    color: #F4F1F0;
+    background: #e05304;
+    color: #f4f1f0;
     border: solid;
     border-color: #ff6b00;
     border-width: 1px;
@@ -1401,7 +1400,6 @@ body {
 
   #source-link button {
     background-color: #ff6b00;
-    border: none;
     color: white;
     font-family: Inter, sans-serif;
     font-size: 17px;
@@ -1414,7 +1412,7 @@ body {
   }
 
   #source-link button:hover {
-    background: #FFF5E1;
+    background: #fff5e1;
     color: #ff6b00;
     border: solid;
     border-color: #ff6b00;
@@ -1422,8 +1420,8 @@ body {
   }
 
   #source-link button:active {
-    background: #E05304;;
-    color: #F4F1F0;
+    background: #e05304;
+    color: #f4f1f0;
     border: solid;
     border-color: #ff6b00;
     border-width: 1px;
