@@ -109,3 +109,31 @@ document.getElementById('btn_enable').addEventListener('click', function() {
     document.getElementById('popup-tag4').innerHTML = card_info.technologies[0].RB_tech_stack[3]
     
 })
+
+
+let form_error
+
+document.getElementsByClassName("form_email")[0].addEventListener('blur', function() {
+    let lowercased = document.getElementsByClassName("form_email")[0].value.toLowerCase()
+    if (document.getElementsByClassName("form_email")[0].value != lowercased) {
+        document.getElementById('form_email_error').innerHTML = ""
+        form_error = true
+    }
+    else {
+        document.getElementById('form_email_error').innerHTML = ""
+        form_error = false
+    }
+})
+
+document.getElementById('form').addEventListener('submit', function(q) {
+    q.preventDefault()
+    if (form_error != true) {
+        document.getElementById("form_submit").submit();
+    }
+})
+
+document.getElementById('form_button').addEventListener('click', function() {
+    if (form_error === true) {
+    document.getElementById('form_email_error').innerHTML = "Use lower caps for email input"
+    }
+})
