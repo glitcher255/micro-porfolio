@@ -18,13 +18,13 @@
     <header id="header">
         <div id="item_nav">
             <div>
-                <a onclick="close_button()" class="menu_link desktop_menu_link" id="portf" href="#section"><p>portfolio</p></a>
+                <a onclick="closeButton()" class="menu_link desktop_menu_link" id="portf" href="#section"><p>portfolio</p></a>
             </div>
             <div>
-                <a onclick="close_button()" class="menu_link desktop_menu_link" id="about" href="#about_me"><p>About</p></a>
+                <a onclick="closeButton()" class="menu_link desktop_menu_link" id="about" href="#about_me"><p>About</p></a>
             </div>
             <div>
-                <a onclick="close_button()" class="menu_link desktop_menu_link" id="contact" href="#form"><p>Contact</p></a>
+                <a onclick="closeButton()" class="menu_link desktop_menu_link" id="contact" href="#form"><p>Contact</p></a>
             </div>
           </div>
 
@@ -175,9 +175,10 @@
     <p id="form_text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
     <form id="form_submit" action="https://formspree.io/f/xrgdnkkd"
      method="POST">
-      <input class="form_inputs" type="text" placeholder="Full name" maxlength="30" required>
+      <input class="form_inputs form_username" type="text" placeholder="Full name" maxlength="30" required>
       <div class="divide"><img src="./assets/Vector 4.png" alt=""></div>
-      <input class="form_inputs" type="email" placeholder="Email address" name="email" required>
+      <input class="form_inputs form_email" type="email" placeholder="Email address" name="email" required>
+      <span id="form_email_error"></span>
       <div class="divide"><img src="./assets/Vector 4.png" alt=""></div>
       <textarea id="form_text_area" placeholder="Enter text here" name="message" maxlength="500" required></textarea>
       <button id="form_button" class="orange_btns" type="submit">Get in touch</button>
